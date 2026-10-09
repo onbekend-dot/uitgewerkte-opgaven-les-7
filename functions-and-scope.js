@@ -155,14 +155,15 @@
 // highestGrade(grades) geeft 9
 // highestGrade([6, 4, 5]) geeft 6
 // highestGrade([8, 9, 4, 6, 10]) geeft 10
-
-
+const highestGrade = [8, 9, 4, 6, 10];
+const highestGrade = [6, 4, 5];
 const highestGrade = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
-let highestGrade = grades[0];
-for (let i = 0; i < grades.length; i++) {
-    if (highestGrade < highestGrade ) {
-        highestGrade = highestGrades[i];
+
+let highestGrades = highestGrade[0];
+for (let i = 1; i < highestGrade.length; i++) {
+
+    if (highestGrade[i] > highestGrades) {
+        highestGrades = highestGrade[i];
     }
 }
-console.log(highestGrade);
-
+console.log(highestGrades);
